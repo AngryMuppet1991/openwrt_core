@@ -8145,30 +8145,6 @@ SHA256sum: 87b8e2c026f17aa7a17318183bbc858f3bc5326eed006310b8c44b65318e9720
 Description:  This package contains an utility useful to upgrade from other firmware or 
  older OpenWrt releases.
 
-Package: mwlwifi-firmware-88w8864
-Version: 2023-04-29-6a436714-1
-Depends: libc, kmod-mwlwifi
-License: ISC
-Section: firmware
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 87945
-Filename: mwlwifi-firmware-88w8864_2023-04-29-6a436714-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 88604
-SHA256sum: bcdcb8f6880f202d98b478b52f9cf559f84e25d169381160b4c28ade4f5d3092
-Description:  Marvell 88W8864 firmware
-
-Package: mwlwifi-firmware-88w8897
-Version: 2023-04-29-6a436714-1
-Depends: libc, kmod-mwlwifi
-License: ISC
-Section: firmware
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 338914
-Filename: mwlwifi-firmware-88w8897_2023-04-29-6a436714-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 339828
-SHA256sum: b3b0ed744471ca90890b3250b7b0ade8028f87fe904ff3386b8140a9ed49eee3
-Description:  Marvell 88W8897 firmware
-
 Package: mwlwifi-firmware-88w8964
 Version: 2023-04-29-6a436714-1
 Depends: libc, kmod-mwlwifi
@@ -8180,18 +8156,6 @@ Filename: mwlwifi-firmware-88w8964_2023-04-29-6a436714-1_arm_cortex-a9_vfpv3-d16
 Size: 224211
 SHA256sum: fb3c0ac1a1dae3c125c6806649e287f18a7cfb1fc186ca5805e4ed242a5958ff
 Description:  Marvell 88W8964 firmware
-
-Package: mwlwifi-firmware-88w8997
-Version: 2023-04-29-6a436714-1
-Depends: libc, kmod-mwlwifi
-License: ISC
-Section: firmware
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 115053
-Filename: mwlwifi-firmware-88w8997_2023-04-29-6a436714-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 115940
-SHA256sum: 07f64eb98104fab655dc37a50d9de88ad59920f8f829493106574b08cf606057
-Description:  Marvell 88W8997 firmware
 
 Package: nand-utils
 Version: 2.1.5-1
