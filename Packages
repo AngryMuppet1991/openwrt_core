@@ -34,6 +34,33 @@ Size: 7470
 SHA256sum: ab72feb54d319d1438a9fba8e1324ce664714bf1d5cadc2560f76dd83c91f65c
 Description:  Block device automounting
 
+Package: dropbear
+Version: 2022.82-5
+Depends: libc
+Alternatives: 100:/usr/bin/scp:/usr/sbin/dropbear, 100:/usr/bin/ssh:/usr/sbin/dropbear
+License: MIT
+Section: net
+CPE-ID: cpe:/a:matt_johnston:dropbear_ssh_server
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 115837
+Filename: dropbear_2022.82-5_arm_cortex-a9_vfpv3-d16.ipk
+Size: 116434
+SHA256sum: afafa8dc9d829fac12723943163afb3d536e43230a9d0d15114e3990226a93eb
+Description:  A small SSH2 server/client designed for small memory environments.
+
+Package: dropbearconvert
+Version: 2022.82-5
+Depends: libc
+License: MIT
+Section: utils
+CPE-ID: cpe:/a:matt_johnston:dropbear_ssh_server
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 43937
+Filename: dropbearconvert_2022.82-5_arm_cortex-a9_vfpv3-d16.ipk
+Size: 44710
+SHA256sum: 74ce40b4bc4b09c3d573c1663e36ae82c3116e9edfb75f2e0ed6cd3b1a175e56
+Description:  Utility for converting SSH keys
+
 Package: fstools
 Version: 2023-02-28-bfe882d5-1
 Depends: libc, ubox, ubi-utils
@@ -7783,6 +7810,18 @@ Filename: kmod-sfp_5.15.137-1_arm_cortex-a9_vfpv3-d16.ipk
 Size: 940
 SHA256sum: e8edf07d143e2d62e886c2e67adab082aacf9ee2aaf6e736b43030e525026964
 Description:  Kernel module to support SFP cages
+
+Package: kmod-siit
+Version: 5.15.137+1.2-4
+Depends: kernel (=5.15.137-1-5693566370d6be70681d3c7511354060)
+License: GPL-2.0-or-later
+Section: kernel
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 5234
+Filename: kmod-siit_5.15.137+1.2-4_arm_cortex-a9_vfpv3-d16.ipk
+Size: 6030
+SHA256sum: f0c2d314204cb7b9fe3149657f1c315a326dc734136d6af6b4031cedd84f96f1
+Description:  Stateless IP ICMP Translation Algorithm
 
 Package: kmod-sis190
 Version: 5.15.137-1
