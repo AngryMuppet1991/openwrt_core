@@ -1,3 +1,21 @@
+Package: arptables-nft
+Version: 1.8.8-2
+Depends: libc, kmod-nft-arp, xtables-nft, kmod-arptables
+Provides: arptables
+Alternatives: 300:/usr/sbin/arptables:/usr/sbin/xtables-nft-multi, 300:/usr/sbin/arptables-restore:/usr/sbin/xtables-nft-multi, 300:/usr/sbin/arptables-save:/usr/sbin/xtables-nft-multi
+Source: package/network/utils/iptables
+SourceName: arptables-nft
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 2312
+Filename: arptables-nft_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 3123
+SHA256sum: 3c0b94a21367c865b5652826209bb88143acdca34e8ed96942fc2ba6eb919314
+Description:  ARP firewall administration tool nft
+
 Package: base-files
 Version: 1-r23630-842932a63d
 Depends: libc, netifd, jsonfilter, usign, openwrt-keyring, ubi-utils, fstools, fwtool
@@ -80,6 +98,24 @@ Size: 44710
 SHA256sum: 74ce40b4bc4b09c3d573c1663e36ae82c3116e9edfb75f2e0ed6cd3b1a175e56
 Description:  Utility for converting SSH keys
 
+Package: ebtables-nft
+Version: 1.8.8-2
+Depends: libc, kmod-nft-bridge, xtables-nft, kmod-ebtables
+Provides: ebtables
+Alternatives: 300:/usr/sbin/ebtables:/usr/sbin/xtables-nft-multi, 300:/usr/sbin/ebtables-restore:/usr/sbin/xtables-nft-multi, 300:/usr/sbin/ebtables-save:/usr/sbin/xtables-nft-multi
+Source: package/network/utils/iptables
+SourceName: ebtables-nft
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 27071
+Filename: ebtables-nft_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 27820
+SHA256sum: 2f70af83768a0cb18c64d303cad6864c1234dc8114c0b86d2c3f8d82e365353d
+Description:  Bridge firewall administration tool nft
+
 Package: fstools
 Version: 2023-02-28-bfe882d5-1
 Depends: libc, ubox, ubi-utils
@@ -111,6 +147,629 @@ Filename: fwtool_2019-11-12-8f7fe925-1_arm_cortex-a9_vfpv3-d16.ipk
 Size: 4977
 SHA256sum: 8ae573715a9d93856a5a3d6fb44ce26129221b2d387809ad56748821d358dd37
 Description:  Utility for appending and extracting firmware metadata and signatures
+
+Package: ip6tables-extra
+Version: 1.8.8-2
+Depends: libc, libxtables12, kmod-ip6tables-extra
+Source: package/network/utils/iptables
+SourceName: ip6tables-extra
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 10185
+Filename: ip6tables-extra_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 10953
+SHA256sum: f2ee872e7e40fc19044f8d2d4fe9736e067622e7eca79ca265bf97aefab4817b
+Description:  iptables header matching modules for IPv6
+
+Package: ip6tables-mod-nat
+Version: 1.8.8-2
+Depends: libc, libxtables12, kmod-ipt-nat6
+Source: package/network/utils/iptables
+SourceName: ip6tables-mod-nat
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 1463
+Filename: ip6tables-mod-nat_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 2233
+SHA256sum: d038087388aeb7cd194b020234566b9a6f6cc1c3604e4ee0f1f5a1d23690b712
+Description:  iptables extensions for IPv6-NAT targets.
+
+Package: ip6tables-nft
+Version: 1.8.8-2
+Depends: libc, kmod-ip6tables, xtables-nft
+Provides: ip6tables
+Alternatives: 300:/usr/sbin/ip6tables:/usr/sbin/xtables-nft-multi, 300:/usr/sbin/ip6tables-restore:/usr/sbin/xtables-nft-multi, 300:/usr/sbin/ip6tables-save:/usr/sbin/xtables-nft-multi
+Source: package/network/utils/iptables
+SourceName: ip6tables-nft
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 244
+Filename: ip6tables-nft_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 1074
+SHA256sum: e4cd4b69cead8ff523caa34b2582d09bbabb75b6a7a3aeedc83de8684da5908e
+Description:  Extra ip6tables nftables nft binaries.
+ ip6tables-nft
+ ip6tables-nft-restore
+ ip6tables-nft-save
+ ip6tables-translate
+ ip6tables-restore-translate
+
+Package: ip6tables-zz-legacy
+Version: 1.8.8-2
+Depends: libc, kmod-ip6tables, xtables-legacy
+Provides: ip6tables, ip6tables-legacy
+Alternatives: 200:/usr/sbin/ip6tables:/usr/sbin/xtables-legacy-multi, 200:/usr/sbin/ip6tables-restore:/usr/sbin/xtables-legacy-multi, 200:/usr/sbin/ip6tables-save:/usr/sbin/xtables-legacy-multi
+Source: package/network/utils/iptables
+SourceName: ip6tables-zz-legacy
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 213
+Filename: ip6tables-zz-legacy_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 1037
+SHA256sum: 4279e1b7e730ed2d8aa7218148088d65e8c75f68cd85e5a145d3efda4988fba5
+Description:  IPv6 firewall administration tool
+
+Package: iptables-mod-checksum
+Version: 1.8.8-2
+Depends: libc, libxtables12, kmod-ipt-checksum
+Source: package/network/utils/iptables
+SourceName: iptables-mod-checksum
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 1120
+Filename: iptables-mod-checksum_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 1901
+SHA256sum: 13419d70a49f014884458da295a565ca7d56dd0deca09ccc3415c9fe63ec107b
+Description:  iptables extension for the CHECKSUM calculation target
+
+Package: iptables-mod-cluster
+Version: 1.8.8-2
+Depends: libc, libxtables12, kmod-ipt-cluster
+Source: package/network/utils/iptables
+SourceName: iptables-mod-cluster
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 1922
+Filename: iptables-mod-cluster_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 3009
+SHA256sum: cd4d8911e1b2e6d3e302ec678f2d7b4511784074a49b4a1db7415c8d627b5f1b
+Description:  iptables extensions for matching cluster.
+ 
+ Netfilter (IPv4/IPv6) module for matching cluster
+ This option allows you to build work-load-sharing clusters of
+ network servers/stateful firewalls without having a dedicated
+ load-balancing router/server/switch. Basically, this match returns
+ true when the packet must be handled by this cluster node. Thus,
+ all nodes see all packets and this match decides which node handles
+ what packets. The work-load sharing algorithm is based on source
+ address hashing.
+ 
+ This module is usable for ipv4 and ipv6.
+ 
+ If you select it, it enables kmod-ipt-cluster.
+ 
+ see `iptables -m cluster --help` for more information.
+
+Package: iptables-mod-clusterip
+Version: 1.8.8-2
+Depends: libc, libxtables12, kmod-ipt-clusterip
+Source: package/network/utils/iptables
+SourceName: iptables-mod-clusterip
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 1957
+Filename: iptables-mod-clusterip_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 2867
+SHA256sum: b21704f25c4cac11593de4373e3eda8e8e8d5c6523e83ad0d12e3ff38c7c5a18
+Description:  iptables extensions for CLUSTERIP.
+ The CLUSTERIP target allows you to build load-balancing clusters of
+ network servers without having a dedicated load-balancing
+ router/server/switch.
+ 
+ If you select it, it enables kmod-ipt-clusterip.
+ 
+ see `iptables -j CLUSTERIP --help` for more information.
+
+Package: iptables-mod-conntrack-extra
+Version: 1.8.8-2
+Depends: libc, libxtables12, kmod-ipt-conntrack-extra
+Source: package/network/utils/iptables
+SourceName: iptables-mod-conntrack-extra
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 11113
+Filename: iptables-mod-conntrack-extra_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 11943
+SHA256sum: 817ef6821bda1483bc8ccae3a048244cba93484dcc984ad91e4451dc6dcc9cba
+Description:  Extra iptables extensions for connection tracking.
+ 
+ Matches:
+ - connbytes
+ - connlimit
+ - connmark
+ - recent
+ - helper
+ 
+ Targets:
+ - CONNMARK
+ 
+
+Package: iptables-mod-conntrack-label
+Version: 1.8.8-2
+Depends: libc, libxtables12, kmod-ipt-conntrack-label
+Source: package/network/utils/iptables
+SourceName: iptables-mod-conntrack-label
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 2252
+Filename: iptables-mod-conntrack-label_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 3024
+SHA256sum: e25ae488e173815c8347bba069b77734f26e70ad73e97d03012da7ed19679eac
+Description:  Match and set label(s) on connection tracking entries
+ 
+ Matches:
+ - connlabel
+ 
+
+Package: iptables-mod-extra
+Version: 1.8.8-2
+Depends: libc, libxtables12, kmod-ipt-extra
+Source: package/network/utils/iptables
+SourceName: iptables-mod-extra
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 8524
+Filename: iptables-mod-extra_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 9346
+SHA256sum: 9778361cb7f3a2c1d5018a8f008032afba5e9b390f425f37b2b977657f553802
+Description:  Other extra iptables extensions.
+ 
+ Matches:
+ - addrtype
+ - condition
+ - owner
+ - pkttype
+ - quota
+ 
+
+Package: iptables-mod-filter
+Version: 1.8.8-2
+Depends: libc, libxtables12, kmod-ipt-filter
+Source: package/network/utils/iptables
+SourceName: iptables-mod-filter
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 4705
+Filename: iptables-mod-filter_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 5465
+SHA256sum: 6e305260560c1aec4f2124a6e520d0e52f19fbb4fd9280114789b06fddd44e30
+Description:  iptables extensions for packet content inspection.
+ Includes support for:
+ 
+ Matches:
+ - string
+ - bpf
+ 
+
+Package: iptables-mod-hashlimit
+Version: 1.8.8-2
+Depends: libc, libxtables12, kmod-ipt-hashlimit
+Source: package/network/utils/iptables
+SourceName: iptables-mod-hashlimit
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 8347
+Filename: iptables-mod-hashlimit_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 9151
+SHA256sum: de1ef130788eeab26882f8d38b45401e116b5a6de788190b35704a7d174da19c
+Description:  iptables extensions for hashlimit matching
+ 
+ Matches:
+ - hashlimit
+ 
+
+Package: iptables-mod-ipopt
+Version: 1.8.8-2
+Depends: libc, libxtables12, kmod-ipt-ipopt
+Source: package/network/utils/iptables
+SourceName: iptables-mod-ipopt
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 12071
+Filename: iptables-mod-ipopt_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 12873
+SHA256sum: 426fc186127f43a3fcd36b70490c5caf36f8c14ef49293c55476008f51339d45
+Description:  iptables extensions for matching/changing IP packet options.
+ 
+ Matches:
+ - dscp
+ - ecn
+ - length
+ - statistic
+ - tcpmss
+ - unclean
+ - hl
+ 
+ Targets:
+ - DSCP
+ - CLASSIFY
+ - ECN
+ - HL
+ 
+
+Package: iptables-mod-iprange
+Version: 1.8.8-2
+Depends: libc, libxtables12, kmod-ipt-iprange
+Source: package/network/utils/iptables
+SourceName: iptables-mod-iprange
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 3164
+Filename: iptables-mod-iprange_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 3924
+SHA256sum: 19e1c58e77ae14505a8c95d0a8be943ef1dd1357fbd747d7ca2032f25416d9f3
+Description:  iptables extensions for matching ip ranges.
+ 
+ Matches:
+ - iprange
+ 
+
+Package: iptables-mod-ipsec
+Version: 1.8.8-2
+Depends: libc, libxtables12, kmod-ipt-ipsec
+Source: package/network/utils/iptables
+SourceName: iptables-mod-ipsec
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 5356
+Filename: iptables-mod-ipsec_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 6105
+SHA256sum: 3a5a5cead0cc21bfdaadbe8238b729e77a1c9302215d7e306e80d433d8427335
+Description:  iptables extensions for matching ipsec traffic.
+ 
+ Matches:
+ - ah
+ - esp
+ - policy
+ 
+
+Package: iptables-mod-led
+Version: 1.8.8-2
+Depends: libc, libxtables12, kmod-ipt-led
+Source: package/network/utils/iptables
+SourceName: iptables-mod-led
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 1667
+Filename: iptables-mod-led_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 2451
+SHA256sum: 7f4ee646d125cde2b803bd09e8dd7a222998ebe3c5e786e08ec8a7e0869411e5
+Description:  iptables extension for triggering a LED.
+ 
+ Targets:
+ - LED
+ 
+
+Package: iptables-mod-nat-extra
+Version: 1.8.8-2
+Depends: libc, libxtables12, kmod-ipt-nat-extra
+Source: package/network/utils/iptables
+SourceName: iptables-mod-nat-extra
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 1989
+Filename: iptables-mod-nat-extra_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 2764
+SHA256sum: 31d5c32c808b3ec41211336526cd694e2078ca3a463a4057fa59724c49070b7a
+Description:  iptables extensions for extra NAT targets.
+ 
+ Targets:
+ - MIRROR
+ - NETMAP
+
+Package: iptables-mod-nflog
+Version: 1.8.8-2
+Depends: libc, libxtables12, kmod-nfnetlink-log, kmod-ipt-nflog
+Source: package/network/utils/iptables
+SourceName: iptables-mod-nflog
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 1944
+Filename: iptables-mod-nflog_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 2760
+SHA256sum: 2bf9c6245eee28a880a22537a1278fbb566b3382feca7c47b3b7611a6425c99b
+Description:  iptables extension for user-space logging via NFNETLINK.
+ 
+ Includes:
+ - libxt_NFLOG
+ 
+
+Package: iptables-mod-nfqueue
+Version: 1.8.8-2
+Depends: libc, libxtables12, kmod-nfnetlink-queue, kmod-ipt-nfqueue
+Source: package/network/utils/iptables
+SourceName: iptables-mod-nfqueue
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 2313
+Filename: iptables-mod-nfqueue_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 3106
+SHA256sum: 723b2f1b8643694973fafe7210f82ef862d1b28adb75af04af89d13af492eeb8
+Description:  iptables extension for user-space queuing via NFNETLINK.
+ 
+ Includes:
+ - libxt_NFQUEUE
+ 
+
+Package: iptables-mod-physdev
+Version: 1.8.8-2
+Depends: libc, libxtables12, kmod-ipt-physdev
+Source: package/network/utils/iptables
+SourceName: iptables-mod-physdev
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 1763
+Filename: iptables-mod-physdev_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 2527
+SHA256sum: cc80adc9062c9adce946b01459b23756e0dc7b56f01b7a649db9687411ad4f29
+Description:  The iptables physdev match.
+
+Package: iptables-mod-rpfilter
+Version: 1.8.8-2
+Depends: libc, libxtables12, kmod-ipt-rpfilter
+Source: package/network/utils/iptables
+SourceName: iptables-mod-rpfilter
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 1598
+Filename: iptables-mod-rpfilter_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 2394
+SHA256sum: 639d977330180df2f9306847f5b2988ebb8c1153eaebdcc9cfe542949a533e58
+Description:  iptables extensions for reverse path filter test on a packet
+ 
+ Matches:
+ - rpfilter
+ 
+
+Package: iptables-mod-socket
+Version: 1.8.8-2
+Depends: libc, libxtables12, kmod-ipt-socket
+Source: package/network/utils/iptables
+SourceName: iptables-mod-socket
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 1564
+Filename: iptables-mod-socket_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 2344
+SHA256sum: 363182c240194c9f0ba63d21e25415a76de1f49a894b55fc85ced356ac5ee7f3
+Description:  Socket match iptables extensions.
+ 
+ Matches:
+ - socket
+ 
+
+Package: iptables-mod-tee
+Version: 1.8.8-2
+Depends: libc, libxtables12, kmod-ipt-tee
+Source: package/network/utils/iptables
+SourceName: iptables-mod-tee
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 1539
+Filename: iptables-mod-tee_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 2314
+SHA256sum: c865666ea1dfae1bac61d2115f0f1b14fe4acd9f57983fc9679da59d6b768dff
+Description:  TEE iptables extensions.
+ 
+ Targets:
+ - TEE
+ 
+
+Package: iptables-mod-tproxy
+Version: 1.8.8-2
+Depends: libc, libxtables12, kmod-ipt-tproxy
+Source: package/network/utils/iptables
+SourceName: iptables-mod-tproxy
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 1620
+Filename: iptables-mod-tproxy_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 2411
+SHA256sum: 2e0b3f74f1f6e16050f5d8fedd8b5d9d0645dcdbece0b0bea5d97fce16069bd0
+Description:  Transparent proxy iptables extensions.
+ 
+ Targets:
+ - TPROXY
+ 
+
+Package: iptables-mod-trace
+Version: 1.8.8-2
+Depends: libc, libxtables12, kmod-ipt-debug
+Source: package/network/utils/iptables
+SourceName: iptables-mod-trace
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 950
+Filename: iptables-mod-trace_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 1734
+SHA256sum: dc358f7b001946d0631cd0b8ae6ddd8a85e07e2a75fe1c5e87d611d65a29174b
+Description:  iptables extension for TRACE target
+ 
+ Includes:
+ - libxt_TRACE
+ 
+
+Package: iptables-mod-u32
+Version: 1.8.8-2
+Depends: libc, libxtables12, kmod-ipt-u32
+Source: package/network/utils/iptables
+SourceName: iptables-mod-u32
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 2584
+Filename: iptables-mod-u32_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 3329
+SHA256sum: 5f8d9bb6091dacdd81e730ddfcd71a205e34af71927865eeb21c04e20e0f46e4
+Description:  U32 iptables extensions.
+ 
+ Matches:
+ - u32
+ 
+
+Package: iptables-nft
+Version: 1.8.8-2
+Depends: libc, kmod-ipt-core, xtables-nft
+Provides: iptables
+Alternatives: 300:/usr/sbin/iptables:/usr/sbin/xtables-nft-multi, 300:/usr/sbin/iptables-restore:/usr/sbin/xtables-nft-multi, 300:/usr/sbin/iptables-save:/usr/sbin/xtables-nft-multi
+Source: package/network/utils/iptables
+SourceName: iptables-nft
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 242
+Filename: iptables-nft_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 1073
+SHA256sum: 54ea58822381a17cdd5a0bd62d473abc2434e227a49e548dd110eb6c38a751e6
+Description:  Extra iptables nftables nft binaries.
+ iptables-nft
+ iptables-nft-restore
+ iptables-nft-save
+ iptables-translate
+ iptables-restore-translate
+
+Package: iptables-zz-legacy
+Version: 1.8.8-2
+Depends: libc, xtables-legacy
+Provides: iptables, iptables-legacy
+Alternatives: 200:/usr/sbin/iptables:/usr/sbin/xtables-legacy-multi, 200:/usr/sbin/iptables-restore:/usr/sbin/xtables-legacy-multi, 200:/usr/sbin/iptables-save:/usr/sbin/xtables-legacy-multi
+Source: package/network/utils/iptables
+SourceName: iptables-zz-legacy
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 244
+Filename: iptables-zz-legacy_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 1218
+SHA256sum: 3108f4efce81959b16d91d3202db988b4b0bef92b75cae4ab66344209a602a37
+Description:  IP firewall administration tool.
+ 
+ Matches:
+ - icmp
+ - tcp
+ - udp
+ - comment
+ - conntrack
+ - limit
+ - mac
+ - mark
+ - multiport
+ - set
+ - state
+ - time
+ 
+ Targets:
+ - ACCEPT
+ - CT
+ - DNAT
+ - DROP
+ - REJECT
+ - FLOWOFFLOAD
+ - LOG
+ - MARK
+ - MASQUERADE
+ - REDIRECT
+ - SET
+ - SNAT
+ - TCPMSS
+ 
+ Tables:
+ - filter
+ - mangle
+ - nat
+ - raw
+ 
 
 Package: kmod-3c59x
 Version: 5.15.137-1
@@ -6379,6 +7038,23 @@ Description:  This option enables the hardware independent IEEE 802.15.4
  complete! Compatibility with other implementations hasn't
  been tested yet!
 
+Package: kmod-macremapper
+Version: 5.15.137-mvebu-2
+Depends: kernel (=5.15.137-1-5693566370d6be70681d3c7511354060), kmod-cfg80211, kmod-br-netfilter
+Source: feeds/packages/kernel/macremapper
+SourceName: kmod-macremapper
+License: GPL-2.0-only
+LicenseFiles: kernelmod/COPYING
+Section: kernel
+SourceDateEpoch: 1710266352
+Maintainer: Carey Sonsino <careys@edgewaterwireless.com>
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 9409
+Filename: kmod-macremapper_5.15.137-mvebu-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 10285
+SHA256sum: 334a3674810eb6cf63ca439df20221c9e8b6ca20fbcd3ac00aab966252f39e52
+Description:  Linux kernel module for implementation the DCW filtering mechanism
+
 Package: kmod-macsec
 Version: 5.15.137-1
 Depends: kernel (=5.15.137-1-5693566370d6be70681d3c7511354060), kmod-crypto-gcm
@@ -12501,6 +13177,96 @@ Size: 20145
 SHA256sum: aacca19398d2f10cdf7e2fd966117d09ce0929ca9642d5506c821481cbce7ed1
 Description:  GCC support library
 
+Package: libip4tc2
+Version: 1.8.8-2
+Depends: libc
+Provides: libip4tc
+Source: package/network/utils/iptables
+SourceName: libip4tc
+License: GPL-2.0
+Section: libs
+SourceDateEpoch: 1700002853
+ABIVersion: 2
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 10370
+Filename: libip4tc2_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 11119
+SHA256sum: 2e1cbfdedd7e757e9444fe8c2ac01e1d6b085ba5e3797505e15c1b16961bd7ca
+Description:  IPv4 firewall - shared libiptc library
+
+Package: libip6tc2
+Version: 1.8.8-2
+Depends: libc
+Provides: libip6tc
+Source: package/network/utils/iptables
+SourceName: libip6tc
+License: GPL-2.0
+Section: libs
+SourceDateEpoch: 1700002853
+ABIVersion: 2
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 10568
+Filename: libip6tc2_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 11331
+SHA256sum: b47eac8bdfe297fb8f1222da1866ad3773d919a3b0bee46e6d96fba39bee54fb
+Description:  IPv6 firewall - shared libiptc library
+
+Package: libiptext-nft0
+Version: 1.8.8-2
+Depends: libc, libxtables12
+Provides: libiptext-nft
+Source: package/network/utils/iptables
+SourceName: libiptext-nft
+License: GPL-2.0
+Section: libs
+SourceDateEpoch: 1700002853
+ABIVersion: 0
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 2667
+Filename: libiptext-nft0_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 3436
+SHA256sum: 87a728f42adcce0add51846459a2ce46c4baf11c50a31abeaed49e27d3209ce4
+Description:  IPv4/IPv6 firewall - shared libiptext nft library
+
+Package: libiptext0
+Version: 1.8.8-2
+Depends: libc, libxtables12
+Provides: libiptext
+Source: package/network/utils/iptables
+SourceName: libiptext
+License: GPL-2.0
+Section: libs
+SourceDateEpoch: 1700002853
+ABIVersion: 0
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 36115
+Filename: libiptext0_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 36921
+SHA256sum: 937ec393d25eb27ea18b3159e7699e816b7939d4d562b28975d95e24af4beb4e
+Description:  IPv4 firewall - shared libiptext library
+
+Package: libiptext6-0
+Version: 1.8.8-2
+Depends: libc, libxtables12
+Provides: libiptext6
+Source: package/network/utils/iptables
+SourceName: libiptext6
+License: GPL-2.0
+Section: libs
+SourceDateEpoch: 1700002853
+ABIVersion: -0
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 7189
+Filename: libiptext6-0_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 8005
+SHA256sum: 4147c3b3f7d67d841549f8732f8618e5e1ef8a0d1a79669120a9b5e88f22a30a
+Description:  IPv6 firewall - shared libiptext library
+
 Package: libpthread
 Version: 1.2.4-4
 Depends: libgcc1
@@ -12555,6 +13321,24 @@ Filename: libstdcpp6_13.1.0-4_arm_cortex-a9_vfpv3-d16.ipk
 Size: 628428
 SHA256sum: 5f68447ffb852fae2abbc0e9ddfaf74a561665c426df429100f965a7ec4d7691
 Description:  GNU Standard C++ Library v3
+
+Package: libxtables12
+Version: 1.8.8-2
+Depends: libc, libnetfilter-conntrack3
+Provides: libxtables
+Source: package/network/utils/iptables
+SourceName: libxtables
+License: GPL-2.0
+Section: libs
+SourceDateEpoch: 1700002853
+ABIVersion: 12
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 21781
+Filename: libxtables12_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 22503
+SHA256sum: 653d59968dcd24af6aa958daadf18a4e1073299886cbbc60f149775091532d8a
+Description:  IPv4/IPv6 firewall - shared xtables library
 
 Package: mwlwifi-firmware-88w8864
 Version: 2023-04-29-6a436714-1
@@ -12669,4 +13453,36 @@ Filename: ubi-utils_2.1.5-1_arm_cortex-a9_vfpv3-d16.ipk
 Size: 88936
 SHA256sum: 4ddd6422c5f4a102875fdc92f44aeb56dd7a6eea50cd4e29958989f9c93a4b16
 Description:  Utilities for manipulating memory technology devices.
+
+Package: xtables-legacy
+Version: 1.8.8-2
+Depends: libc, kmod-ipt-core, libip4tc2, libip6tc2, libiptext0, libiptext6-0, libxtables12
+Source: package/network/utils/iptables
+SourceName: xtables-legacy
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 25187
+Filename: xtables-legacy_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 25868
+SHA256sum: 2e20998d3c328e9784f734dd033c7cba288136e21d66dfd6fc05d60dd2d4f158
+Description:  IP firewall administration tool
+
+Package: xtables-nft
+Version: 1.8.8-2
+Depends: libc, libnftnl11, libiptext0, libiptext6-0, libiptext-nft0, kmod-nft-compat
+Source: package/network/utils/iptables
+SourceName: xtables-nft
+License: GPL-2.0
+Section: net
+SourceDateEpoch: 1700002853
+CPE-ID: cpe:/a:netfilter_core_team:iptables
+Architecture: arm_cortex-a9_vfpv3-d16
+Installed-Size: 75659
+Filename: xtables-nft_1.8.8-2_arm_cortex-a9_vfpv3-d16.ipk
+Size: 76092
+SHA256sum: 1e6b0ba2a901d85d6883d3a4ff4cc8dbd8aac979fcc90e452f1d7b07d991ecad
+Description:  IP firewall administration tool nft
 
