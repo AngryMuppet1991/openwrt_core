@@ -49,71 +49,6 @@ Size: 7436
 SHA256sum: 64566cfcd5f380221975e5ec4c896c8824127c6b0510748c4f042a187fd753b4
 Description:  Block device automounting
 
-Package: comgt-directip
-Version: 0.32-35
-Depends: libc, comgt, kmod-usb-serial, kmod-usb-serial-sierrawireless, kmod-usb-net, kmod-usb-net-sierrawireless
-License: GPL-2.0+
-Section: net
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 1571
-Filename: comgt-directip_0.32-35_arm_cortex-a9_vfpv3-d16.ipk
-Size: 2371
-SHA256sum: 31a494249f73792802047936034c2b0feba16045340309859279886868c32011
-Description:  Sierra Wireless Direct-IP support
-
-Package: comgt-ncm
-Version: 0.32-35
-Depends: libc, comgt, wwan, kmod-usb-serial-option, kmod-usb-net-huawei-cdc-ncm
-License: GPL-2.0+
-Section: net
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 2888
-Filename: comgt-ncm_0.32-35_arm_cortex-a9_vfpv3-d16.ipk
-Size: 3673
-SHA256sum: 37bc85a1e3be4990f5da2c9da67bd4e92b7ef9940a7e2065aa65d24a10511e6f
-Description:  NCM 3G/4G Support
-
-Package: comgt
-Version: 0.32-35
-Depends: libc, chat
-License: GPL-2.0+
-Section: net
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 21958
-Filename: comgt_0.32-35_arm_cortex-a9_vfpv3-d16.ipk
-Size: 22798
-SHA256sum: da9bcc9fcc5cd9e509d2442ec95a26b5bc642600a914a513d2ac281e398c6bfa
-Description:  comgt is a scripting language interpreter useful for establishing 
- communications on serial lines and through PCMCIA modems as well as GPRS 
- and 3G datacards.
-
-Package: dropbear
-Version: 2022.82-5
-Depends: libc
-Alternatives: 100:/usr/bin/scp:/usr/sbin/dropbear, 100:/usr/bin/ssh:/usr/sbin/dropbear
-License: MIT
-Section: net
-CPE-ID: cpe:/a:matt_johnston:dropbear_ssh_server
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 115837
-Filename: dropbear_2022.82-5_arm_cortex-a9_vfpv3-d16.ipk
-Size: 116434
-SHA256sum: afafa8dc9d829fac12723943163afb3d536e43230a9d0d15114e3990226a93eb
-Description:  A small SSH2 server/client designed for small memory environments.
-
-Package: dropbearconvert
-Version: 2022.82-5
-Depends: libc
-License: MIT
-Section: utils
-CPE-ID: cpe:/a:matt_johnston:dropbear_ssh_server
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 43937
-Filename: dropbearconvert_2022.82-5_arm_cortex-a9_vfpv3-d16.ipk
-Size: 44710
-SHA256sum: 74ce40b4bc4b09c3d573c1663e36ae82c3116e9edfb75f2e0ed6cd3b1a175e56
-Description:  Utility for converting SSH keys
-
 Package: ebtables-nft
 Version: 1.8.8-2
 Depends: libc, kmod-nft-bridge, xtables-nft, kmod-ebtables
@@ -951,32 +886,6 @@ Size: 6379
 SHA256sum: c9b114c3ddcaa4990957ba3f5f61d57ef1f65fca9111415f2ddbd4ec157c436c
 Description:  This option enables support for VIA Serial ATA
 
-Package: kmod-ath10k-ct-smallbuffers
-Version: 5.15.137+2022-05-13-f808496f-5
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-ath, kmod-hwmon-core
-Provides: kmod-ath10k
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 248224
-Filename: kmod-ath10k-ct-smallbuffers_5.15.137+2022-05-13-f808496f-5_arm_cortex-a9_vfpv3-d16.ipk
-Size: 245938
-SHA256sum: 7854771a44153f80475b0a37a9f9cc986e6bd5a42a5ef32020b4175969445bf6
-Description:  ath10k-ct driver optimized for CT ath10k firmware (small buffers for low-RAM devices)
-
-Package: kmod-ath10k-ct
-Version: 5.15.137+2022-05-13-f808496f-5
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-ath, kmod-hwmon-core
-Provides: kmod-ath10k
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 248209
-Filename: kmod-ath10k-ct_5.15.137+2022-05-13-f808496f-5_arm_cortex-a9_vfpv3-d16.ipk
-Size: 245865
-SHA256sum: 2e5d1478339f39bdd64f7e0c085e884af25b65f8e94b91f43691fe8f02344dd5
-Description:  ath10k-ct driver optimized for CT ath10k firmware
-
 Package: kmod-ath10k-smallbuffers
 Version: 5.15.137+6.1.24-3
 Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-ath
@@ -1454,19 +1363,6 @@ Filename: kmod-btsdio_5.15.137-1_arm_cortex-a9_vfpv3-d16.ipk
 Size: 3586
 SHA256sum: ee47e20dc089638bf069061ecf9917e757bc40102ed59faad5f2b2cfc98849a4
 Description:  Kernel support for Bluetooth device with SDIO interface
-
-Package: kmod-button-hotplug
-Version: 5.15.137-3
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-input-core
-License: GPL-2.0
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 3365
-Filename: kmod-button-hotplug_5.15.137-3_arm_cortex-a9_vfpv3-d16.ipk
-Size: 4170
-SHA256sum: 5f6a2c47b66526bf313abd2b2fac055ff4090a6b3e7477544d754b4aec0cc784
-Description:  Kernel module to generate button uevent-s from input subsystem events.
- If your device uses GPIO buttons, see gpio-button-hotplug.
 
 Package: kmod-ca8210
 Version: 5.15.137-1
@@ -2324,55 +2220,6 @@ SHA256sum: b582cf2cf4775b79dc9788d9fc31504613c8ce1a280cd9191c683010dded7bed
 Description:  This is a driver for that allows to use the Linux kernel supported
  hardware ciphers by user-space applications.
 
-Package: kmod-dahdi-dummy
-Version: 5.15.137+3.1.0-5
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-dahdi
-License: GPL-2.0
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 2486
-Filename: kmod-dahdi-dummy_5.15.137+3.1.0-5_arm_cortex-a9_vfpv3-d16.ipk
-Size: 3339
-SHA256sum: 67fd22400fb7d529816917959e9b4c9e4e60ef63f4272db3709a175a41acdbe1
-Description:  This package contains the dummy DAHDI driver providing only DAHDI timing
- without any real telephony hardware.
-
-Package: kmod-dahdi-echocan-oslec
-Version: 5.15.137+3.1.0-5
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-dahdi, kmod-echo
-License: GPL-2.0
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 1806
-Filename: kmod-dahdi-echocan-oslec_5.15.137+3.1.0-5_arm_cortex-a9_vfpv3-d16.ipk
-Size: 2670
-SHA256sum: 1ea332db03f31242094cde6a2cee0805d6326710be8df3cf3cd2f8a30809a301
-Description:  This package contains DAHDI OSLEC echo canceller support.
-
-Package: kmod-dahdi-hfcs
-Version: 5.15.137+3.1.0-5
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-dahdi
-License: GPL-2.0
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 10966
-Filename: kmod-dahdi-hfcs_5.15.137+3.1.0-5_arm_cortex-a9_vfpv3-d16.ipk
-Size: 11841
-SHA256sum: dc1dce2ba2c88b5b5bdf557be7b495c70cc13c659e171b70953eed52085041f0
-Description:  This package contains DAHDI driver for HFC-S based PCI BRI adapters.
-
-Package: kmod-dahdi
-Version: 5.15.137+3.1.0-5
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-lib-crc-ccitt
-License: GPL-2.0
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 62686
-Filename: kmod-dahdi_5.15.137+3.1.0-5_arm_cortex-a9_vfpv3-d16.ipk
-Size: 62986
-SHA256sum: 650f3a27fa8e91869ee4a965e212090bba0304b6a69bf8efa7f978de773162b7
-Description:  This package contains DAHDI basic infrastructure.
-
 Package: kmod-dax
 Version: 5.15.137-1
 Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a)
@@ -3169,24 +3016,6 @@ Filename: kmod-gpio-beeper_5.15.137-1_arm_cortex-a9_vfpv3-d16.ipk
 Size: 2510
 SHA256sum: ff4c833e5179bf97b7e4513bde33a479bca88dff816b688daf278722d4968b72
 Description:  This enables playing beeps through an GPIO-connected buzzer
-
-Package: kmod-gpio-button-hotplug
-Version: 5.15.137-3
-Depends: kernel (=5.15.137-1-5693566370d6be70681d3c7511354060)
-License: GPL-2.0
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 5943
-Filename: kmod-gpio-button-hotplug_5.15.137-3_arm_cortex-a9_vfpv3-d16.ipk
-Size: 6877
-SHA256sum: eab517561aca3b85e3ac9cdd2042881910ed360492781e7b40f9214edb53151b
-Description:  This is a replacement for the following in-kernel drivers:
- 1) gpio_keys (KEYBOARD_GPIO)
- 2) gpio_keys_polled (KEYBOARD_GPIO_POLLED)
- 
- Instead of generating input events (like in-kernel drivers do) it generates
- uevent-s and broadcasts them. This allows disabling input subsystem which is
- an overkill for OpenWrt simple needs.
 
 Package: kmod-gpio-cascade
 Version: 5.15.137-1
@@ -4912,18 +4741,6 @@ Description:  Netfilter (IPv4) kernel modules for connection tracking
  - NOTRACK
  - state
 
-Package: kmod-ipt-coova
-Version: 5.15.137+1.6-9.1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-ipt-core, libxtables12
-License: GPL-2.0-or-later
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 5675
-Filename: kmod-ipt-coova_5.15.137+1.6-9.1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 6513
-SHA256sum: 409e4a4d9dc6d21ad8f8da157fc34820b5b7fa0df4b430b5928f4c30a8949ba0
-Description:  Netfilter kernel module for CoovaChilli
-
 Package: kmod-ipt-core
 Version: 5.15.137-1
 Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-nf-reject, kmod-nf-ipt, kmod-nf-log
@@ -5413,19 +5230,6 @@ Size: 3645
 SHA256sum: 97a826b84830849e237578b0476ffe8f6fd9ff967b575fe3e3a155d0bec74ab3
 Description:  Kernel modules support for the Netfilter rpfilter match
 
-Package: kmod-ipt-rtpengine
-Version: 5.15.137+10.5.6.3-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-crypto-aead, kmod-crypto-hash, kmod-ipt-core
-License: GPL-3.0
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 24532
-Filename: kmod-ipt-rtpengine_5.15.137+10.5.6.3-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 25311
-SHA256sum: bd13a0d4b8404f6c7c9b700591376b8a1366c4525babfa674946d2ded39089ed
-Description:  Netfilter kernel module for rtpengine
- 
-
 Package: kmod-ipt-socket
 Version: 5.15.137-1
 Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-nf-socket, kmod-nf-conntrack, kmod-ipt-core
@@ -5610,20 +5414,6 @@ Filename: kmod-ixgbevf_5.15.137-1_arm_cortex-a9_vfpv3-d16.ipk
 Size: 30886
 SHA256sum: 268a1e09b969d77dd5ff4ceebfcb3c349bd5de8786e3d6c27182034a02642aef
 Description:  Kernel modules for Intel(R) 82599 Virtual Function Ethernet adapters.
-
-Package: kmod-jool-netfilter
-Version: 5.15.137+4.1.8-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-crypto-md5, kmod-nf-conntrack, kmod-nf-conntrack6
-License: GPL-2.0-only
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 94320
-Filename: kmod-jool-netfilter_5.15.137+4.1.8-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 94520
-SHA256sum: b1643d456f103e85fc955dd13211f4298d46cd6ebff072c9e83838cc8afdfa5a
-Description:  Jool is an Open Source SIIT and NAT64 for Linux.
- 
- This package provides the kernel module for Jool with netfilter API Only.
 
 Package: kmod-keys-encrypted
 Version: 5.15.137-1
@@ -6164,18 +5954,6 @@ Description:  This option enables the hardware independent IEEE 802.15.4
  complete! Compatibility with other implementations hasn't
  been tested yet!
 
-Package: kmod-macremapper
-Version: 5.15.137-mvebu-2
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-cfg80211, kmod-br-netfilter
-License: GPL-2.0-only
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 9561
-Filename: kmod-macremapper_5.15.137-mvebu-2_arm_cortex-a9_vfpv3-d16.ipk
-Size: 10426
-SHA256sum: 8cebddc4713783b229de68c37e938bde51cd850fd4a8b3b0acc37f65d35ba09b
-Description:  Linux kernel module for implementation the DCW filtering mechanism
-
 Package: kmod-macsec
 Version: 5.15.137-1
 Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-crypto-gcm
@@ -6319,18 +6097,6 @@ Filename: kmod-mdio-gpio_5.15.137-1_arm_cortex-a9_vfpv3-d16.ipk
 Size: 4070
 SHA256sum: 9e944781859e23617095d47dbddab223142f08a5bcdb1b9b1b8171a488b80f41
 Description:  Supports GPIO lib-based MDIO busses
-
-Package: kmod-mdio-netlink
-Version: 5.15.137+1.2.0-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a)
-License: GPL-2.0-only
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 3384
-Filename: kmod-mdio-netlink_5.15.137+1.2.0-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 4182
-SHA256sum: 4009da0d136f56657a25fc6eba056603f4bc7dd950bc6d4808d66c6fd5784f4b
-Description:  mdio-netlink Linux MDIO netlink kernel module
 
 Package: kmod-mdio
 Version: 5.15.137-1
@@ -6514,54 +6280,6 @@ Size: 7871
 SHA256sum: 9f656ac5f228a81e30428228c0397f6bc022d4dba2f8c894ba2c4e1d57159277
 Description:  MRF24J40 transceiver driver
 
-Package: kmod-mt76-connac
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-mt76-core
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 24312
-Filename: kmod-mt76-connac_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 25079
-SHA256sum: 5c1b6f8101352457f81832e115ac007dfb50f0ba0f3d2587f3ac4c0f9fede0f9
-Description:  MediaTek MT7615/MT79xx wireless driver common code
-
-Package: kmod-mt76-core
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 31923
-Filename: kmod-mt76-core_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 32664
-SHA256sum: 9546c8f932fbb1bf253d08f5ee5daa5a720f42904140c8aa52e7b7a5a106c060
-Description:  MediaTek MT76xx wireless driver
-
-Package: kmod-mt76-sdio
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-mt76-core, kmod-mmc
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 8236
-Filename: kmod-mt76-sdio_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 9054
-SHA256sum: d49b1161d39e3cb3c4e4b80753d2c1c1a0f840b71b0d561413912a2e09f509de
-Description:  MediaTek MT7615/MT79xx SDIO driver common code
-
-Package: kmod-mt76-usb
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-usb-core, kmod-mt76-core
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 9174
-Filename: kmod-mt76-usb_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 9984
-SHA256sum: e9a9eb8a0178e55852e4c5a33fdd7d0d99e7c6e400eaa20a83d0ab01b20c6dd1
-Description:  MediaTek MT76xx wireless driver USB support
-
 Package: kmod-mt7601u
 Version: 5.15.137+6.1.24-3
 Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-usb-core, mt7601u-firmware
@@ -6572,366 +6290,6 @@ Filename: kmod-mt7601u_5.15.137+6.1.24-3_arm_cortex-a9_vfpv3-d16.ipk
 Size: 32699
 SHA256sum: c1f3f69072f155cb8f537c15a32f4c681cf7e7efeb8ae207f90b9a276c395895
 Description:  MT7601U-based USB dongles Wireless Driver
-
-Package: kmod-mt7603
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-mt76-core
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 98670
-Filename: kmod-mt7603_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 99558
-SHA256sum: be28971fd8f2b36bcd80a9719ba4bc56a6466d4f476259762b3888994f660445
-Description:  MediaTek MT7603 wireless driver
-
-Package: kmod-mt7615-common
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-mt76-core, kmod-mt76-connac, kmod-hwmon-core
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 45371
-Filename: kmod-mt7615-common_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 45931
-SHA256sum: ff2128e8585dcd5999af72a38e416839a2c9a5090ee6fb7b72665730c4b57b43
-Description:  MediaTek MT7615 wireless driver common code
-
-Package: kmod-mt7615-firmware
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-mt7615e
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 551544
-Filename: kmod-mt7615-firmware_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 552429
-SHA256sum: e28ac2118dbdd651021f8e17c7f1a45ac8babcb32d8be26d1dafa6058856ac64
-Description:  MediaTek MT7615e firmware
-
-Package: kmod-mt7615e
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-mt7615-common
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 8430
-Filename: kmod-mt7615e_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 9252
-SHA256sum: 3c0d39043173afe2774b17fcf8712e4738bcb3387c1e8b5fe1af3bfd538ef59b
-Description:  MediaTek MT7615e wireless driver
-
-Package: kmod-mt7622-firmware
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-mt7615e
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 332331
-Filename: kmod-mt7622-firmware_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 333208
-SHA256sum: 3dbdff9c394202f132ac2d295911c454cf76082d673f26daef320dd39920b903
-Description:  MediaTek MT7622 firmware
-
-Package: kmod-mt7663-firmware-ap
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 460349
-Filename: kmod-mt7663-firmware-ap_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 461153
-SHA256sum: f4a6b6405499006e08b066d18e248447fed8c12175599fde5e3fe0bac85e6f19
-Description:  MediaTek MT7663e firmware (optimized for AP)
-
-Package: kmod-mt7663-firmware-sta
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 564544
-Filename: kmod-mt7663-firmware-sta_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 564982
-SHA256sum: 92a623386f6a65ed12998f3830aa9f0b760d411146d44e83376b46e10f8f9f04
-Description:  MediaTek MT7663e firmware (client mode offload)
-
-Package: kmod-mt7663-usb-sdio
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-mt7615-common
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 3290
-Filename: kmod-mt7663-usb-sdio_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 4090
-SHA256sum: 76c5bbbd83cf8fac945f0c9ff832fc1befd22baf2a1e7207a525292b80c414d5
-Description:  MediaTek MT7663 USB/SDIO shared code
-
-Package: kmod-mt7663s
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-mt76-sdio, kmod-mt7615-common, kmod-mt7663-usb-sdio
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 3902
-Filename: kmod-mt7663s_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 4723
-SHA256sum: 8e75a3043347cdfff013086452ee53fda061133484e4bd6cc07d42febfc88a56
-Description:  MediaTek MT7663s wireless driver
-
-Package: kmod-mt7663u
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-mt76-usb, kmod-mt7615-common, kmod-mt7663-usb-sdio
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 3482
-Filename: kmod-mt7663u_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 4293
-SHA256sum: ae9f4f107b74c2e1b31c836f64be55cce9e0f180630a8a4fe9911a31e4d7647a
-Description:  MediaTek MT7663u wireless driver
-
-Package: kmod-mt76
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mt76-core, kmod-mt76x2, kmod-mt7603
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 95
-Filename: kmod-mt76_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 901
-SHA256sum: fdfc4446fbd73b5b7ea9a6ac9357d951e69273cc5699c78e187aed421b2bda99
-Description:  MediaTek MT76x2/MT7603 wireless driver (metapackage)
-
-Package: kmod-mt76x0-common
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-mt76x02-common
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 60629
-Filename: kmod-mt76x0-common_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 61283
-SHA256sum: fdbc58a235f4ef277f4506944d41a52314dfe34c4d65a974c94cb038e44fe4df
-Description:  MediaTek MT76x0 wireless driver common code
-
-Package: kmod-mt76x02-common
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-mt76-core
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 27708
-Filename: kmod-mt76x02-common_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 28418
-SHA256sum: 8c0a22850e6de786ce7f0e51fe4dacca8c61d5d55648d39ea06d009fb59584d5
-Description:  MediaTek MT76x0/MT76x2 wireless driver common code
-
-Package: kmod-mt76x02-usb
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-mt76-usb, kmod-mt76x02-common
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 5249
-Filename: kmod-mt76x02-usb_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 6058
-SHA256sum: a71641a108afddea8c328eb46df3ba338d598ef0693d979dba7c6ae493e32607
-Description:  MediaTek MT76x0/MT76x2 USB wireless driver common code
-
-Package: kmod-mt76x0e
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-mt76x0-common
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 4122
-Filename: kmod-mt76x0e_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 4914
-SHA256sum: 249bec912d5841ef3892a45cb73c9041bbff62fb1b723b67be9146063aec3a3b
-Description:  MediaTek MT76x0E wireless driver
-
-Package: kmod-mt76x0u
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-mt76x0-common, kmod-mt76x02-usb
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 4487
-Filename: kmod-mt76x0u_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 5307
-SHA256sum: fb18eab02f0870cc5595ef70cda3fab44bb1828f8e1f53e9ebe47e720be38c78
-Description:  MediaTek MT76x0U wireless driver
-
-Package: kmod-mt76x2-common
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-mt76-core, kmod-mt76x02-common
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 79367
-Filename: kmod-mt76x2-common_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 80314
-SHA256sum: db5b205b8f836169095b71d87a4bb42f17271b75f42e6aa75998063ef1ff1fa4
-Description:  MediaTek MT76x2 wireless driver common code
-
-Package: kmod-mt76x2
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-mt76x2-common
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 8497
-Filename: kmod-mt76x2_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 9311
-SHA256sum: 1c3044e6ca2a39e596b6376e9cca1b421319c8bf9c553c1ea499c5cc25642d8b
-Description:  MediaTek MT76x2 wireless driver
-
-Package: kmod-mt76x2u
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-mt76x2-common, kmod-mt76x02-usb
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 8117
-Filename: kmod-mt76x2u_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 8960
-SHA256sum: 59570321cb44451f9c52df101d10dc0aaddca8b31bd8edd2c1d6afe82242e37f
-Description:  MediaTek MT76x2U wireless driver
-
-Package: kmod-mt7915-firmware
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-mt7915e
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 515664
-Filename: kmod-mt7915-firmware_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 512022
-SHA256sum: 8e0c2dc1254d6ed6f1b9e963f3410f6ec4b4667a8132092c96de275f2f550f5c
-Description:  MediaTek MT7915 firmware
-
-Package: kmod-mt7915e
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-mt76-connac, kmod-hwmon-core, kmod-thermal
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 67903
-Filename: kmod-mt7915e_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 68543
-SHA256sum: 2c16395438084dffde7c57b1a50bd7085c5a388a4e2cae8a423c3ddbd63ed498
-Description:  MediaTek MT7915e wireless driver
-
-Package: kmod-mt7916-firmware
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-mt7915e
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 693570
-Filename: kmod-mt7916-firmware_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 689405
-SHA256sum: eb9c7bdecfe22101467d60ff2e7135db80bc18289676e67564b7c4b9fcf10785
-Description:  MediaTek MT7916 firmware
-
-Package: kmod-mt7921-common
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-mt792x-common, kmod-mt7921-firmware, kmod-hwmon-core
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 27588
-Filename: kmod-mt7921-common_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 28287
-SHA256sum: 50af7774a9ccc9c2538d88ed5a2191a01f771b54ed1f2b3cab1373648ce9d03d
-Description:  MediaTek MT7921 wireless driver common code
-
-Package: kmod-mt7921-firmware
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 456896
-Filename: kmod-mt7921-firmware_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 456300
-SHA256sum: e62c03b60e9f7785e0d5c854fc9d22ae6cc6f2410bcaa6c769c6d110da988d23
-Description:  MediaTek MT7921 firmware
-
-Package: kmod-mt7921e
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-mt7921-common
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 5720
-Filename: kmod-mt7921e_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 6527
-SHA256sum: ec3e0ad61e04622f877d6f1038cfb79427aebf9263a8ea484f7ab2263632b89f
-Description:  MediaTek MT7921e wireless driver
-
-Package: kmod-mt7921s
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-mt76-sdio, kmod-mt7921-common
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 5215
-Filename: kmod-mt7921s_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 6035
-SHA256sum: 230b0220a458ee4a28c037a59f82381d67c74546fcbe0dc37fa807e6d4ffbd45
-Description:  MediaTek MT7921S wireless driver
-
-Package: kmod-mt7921u
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-mt792x-usb, kmod-mt7921-common
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 3238
-Filename: kmod-mt7921u_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 4039
-SHA256sum: ef42dc1faa25d8a293ea10910fcad0c980e9fc781d0758e6190bf81732818dcf
-Description:  MediaTek MT7921U wireless driver
-
-Package: kmod-mt792x-common
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-mt76-connac
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 13018
-Filename: kmod-mt792x-common_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 13803
-SHA256sum: 2af56001e3b56dcf7270d60ab03303d0fa28e70a700a3a2e235be8fe1e7054fd
-Description:  MediaTek MT792x wireless driver common code
-
-Package: kmod-mt792x-usb
-Version: 5.15.137+2023-08-14-b14c2351-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-mac80211, kmod-mt792x-common, kmod-mt76-usb
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 2734
-Filename: kmod-mt792x-usb_5.15.137+2023-08-14-b14c2351-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 3544
-SHA256sum: 310dc1ed216074d8b39c4436c6f114511c28d1df963122e37ad62f3bc833d835
-Description:  MediaTek MT792x wireless driver USB code
-
-Package: kmod-mtd-rw
-Version: 5.15.137+git-20160214-2
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a)
-License: GPL-2.0
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 1627
-Filename: kmod-mtd-rw_5.15.137+git-20160214-2_arm_cortex-a9_vfpv3-d16.ipk
-Size: 2475
-SHA256sum: 51b79b2fc7b92cd329de579e22ce12b0d57cfa2b95fa6403d0916c5a39ed85eb
-Description:  A kernel module that temporarily makes all MTD partitions writeable.
 
 Package: kmod-mtdoops
 Version: 5.15.137-1
@@ -7038,18 +6396,6 @@ Size: 85948
 SHA256sum: 9b69103902dc277e7b6d7742c8ed3aeef003a59eeff9c3ed95b13de2ebda9733
 Description:  Marvell 88W8864/88W8897/88W8964/88W8997 wireless driver
 
-Package: kmod-nat46
-Version: 5.15.137+2022-09-19-4c5beee2-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-nf-conntrack6
-License: GPL-2.0
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 17457
-Filename: kmod-nat46_5.15.137+2022-09-19-4c5beee2-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 18269
-SHA256sum: e22a7f8d39b795aa6eca6a016e6de67cea722f5427056820577a6d93a6b1c454
-Description:  Stateless NAT46 translation kernel module
-
 Package: kmod-natsemi
 Version: 5.15.137-1
 Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a)
@@ -7098,25 +6444,6 @@ Filename: kmod-net-selftests_5.15.137-1_arm_cortex-a9_vfpv3-d16.ipk
 Size: 946
 SHA256sum: 45521f920840b25877d3085123570d14c280f8b9836745b41623e68fc7a4363d
 Description:  Kernel modules for the generic selftest support
-
-Package: kmod-netatop
-Version: 5.15.137+3.1-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a)
-License: GPL-2.0
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 7493
-Filename: kmod-netatop_5.15.137+3.1-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 8566
-SHA256sum: 43c3480789d84c89922a948fd161e8ce9f62bfa8cbc6d20a726f42bf27f25911
-Description:  The optional kernel module netatop can be loaded to gather statistics about
- the TCP and UDP packets that have been transmitted/received per process and
- per thread. As soon as atop discovers that this module is active, it shows
- the columns SNET and RNET in the generic screen for the number of transmitted
- and received packets per process. When the 'n' key is pressed, it shows
- detailed counters about the number packets transmitted/received via TCP and
- UDP, the average sizes of these packets, and the total bandwidth consumed
- for input and output per process/thread.
 
 Package: kmod-netconsole
 Version: 5.15.137-1
@@ -7947,71 +7274,6 @@ Size: 3339
 SHA256sum: 5de7f5b267107785640e0d38cf778a961a43288af6020eb643804b1427c10caa
 Description:  Object identifier registry
 
-Package: kmod-openvswitch-geneve
-Version: 5.15.137+2.17.9-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-openvswitch, kmod-geneve
-License: Apache-2.0
-Section: kernel
-CPE-ID: cpe:/a:openvswitch:openvswitch
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 1701
-Filename: kmod-openvswitch-geneve_5.15.137+2.17.9-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 2569
-SHA256sum: 70a313188f6d6f57f65413416df4c813b60824f270d1ba9b47b0d73fa5e45eef
-Description:  Open vSwitch Geneve tunneling support (upstream)
-
-Package: kmod-openvswitch-gre
-Version: 5.15.137+2.17.9-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-openvswitch, kmod-gre
-License: Apache-2.0
-Section: kernel
-CPE-ID: cpe:/a:openvswitch:openvswitch
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 1446
-Filename: kmod-openvswitch-gre_5.15.137+2.17.9-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 2311
-SHA256sum: 59928d9e61fb65ef0560fe8aeb9a395769cb1bdb7770f2ef2b657c27efc83caa
-Description:  Open vSwitch GRE tunneling support (upstream)
-
-Package: kmod-openvswitch-vxlan
-Version: 5.15.137+2.17.9-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-openvswitch, kmod-vxlan
-License: Apache-2.0
-Section: kernel
-CPE-ID: cpe:/a:openvswitch:openvswitch
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 2111
-Filename: kmod-openvswitch-vxlan_5.15.137+2.17.9-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 2943
-SHA256sum: de8846835c6f3e86fc202edc9bc89dfd02b1109b1f0bac225a32e8168d0b4963
-Description:  Open vSwitch VXLAN tunneling support (upstream)
-
-Package: kmod-openvswitch
-Version: 5.15.137+2.17.9-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-lib-crc32c, kmod-mpls, kmod-nf-nat, kmod-nf-nat6, kmod-nf-conntrack, kmod-nf-conntrack6, kmod-nsh, kmod-ipt-conntrack-extra
-License: Apache-2.0
-Section: kernel
-CPE-ID: cpe:/a:openvswitch:openvswitch
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 72697
-Filename: kmod-openvswitch_5.15.137+2.17.9-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 73406
-SHA256sum: 86e8c4e1bf9b4f2e53a01f25452d493facf9753fb3dfa3d444d40b8dbf0feeb9
-Description:  Open vSwitch kernel datapath (upstream)
-
-Package: kmod-ovpn-dco
-Version: 5.15.137+2022-10-23-d1d53564-3
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-crypto-aead, kmod-udptunnel4, kmod-udptunnel6
-License: GPL-2.0-only
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 26261
-Filename: kmod-ovpn-dco_5.15.137+2022-10-23-d1d53564-3_arm_cortex-a9_vfpv3-d16.ipk
-Size: 27074
-SHA256sum: 2c51b91d1cc85426ed3a7d59db03b9daf35bb6d7b2105233279220ada92aacc8
-Description:  This module enhances the performance of the OpenVPN userspace software
- by offloading the data channel processing to kernelspace.
-
 Package: kmod-owl-loader
 Version: 5.15.137+6.1.24-3
 Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-ath9k
@@ -8051,18 +7313,6 @@ Filename: kmod-pcnet32_5.15.137-1_arm_cortex-a9_vfpv3-d16.ipk
 Size: 20047
 SHA256sum: 40cba1e20175ff8d081655fe353f36df729f1dc2c62f29b4437cab1bda3e94d6
 Description:  Kernel modules for AMD PCnet32 Ethernet adapters
-
-Package: kmod-pf-ring
-Version: 5.15.137+8.0.0-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a)
-License: GPL-2.0-or-later
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 60241
-Filename: kmod-pf-ring_5.15.137+8.0.0-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 60528
-SHA256sum: 6904ee734969287f1f7b29b1cba6a2c87dedcfbdf919ba59d0f3af6916a961d2
-Description:  Kernel module for libpf-ring package
 
 Package: kmod-phy-aquantia
 Version: 5.15.137-1
@@ -8920,19 +8170,6 @@ Description:  This option enables support for RTL8723BS SDIO drivers, such as th
  on the 1st gen Intel Compute Stick, the CHIP and many other Intel Atom and ARM
  based devices.
 
-Package: kmod-rtl8812au-ct
-Version: 5.15.137+2021-11-07-39df5596-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-cfg80211, kmod-usb-core
-Provides: kmod-rtl8812au
-License: GPLv2
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 524537
-Filename: kmod-rtl8812au-ct_5.15.137+2021-11-07-39df5596-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 477782
-SHA256sum: 48432f9dd92496f5748a9df5eabd8173366904d055553356f704307f98503824
-Description:  Driver for Realtek 8812 AU devices comfast 912-ac, etc
-
 Package: kmod-rtl8821ae
 Version: 5.15.137+6.1.24-3
 Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-rtlwifi-btcoexist, kmod-rtlwifi-pci, rtl8821ae-firmware
@@ -9390,18 +8627,6 @@ Filename: kmod-sfp_5.15.137-1_arm_cortex-a9_vfpv3-d16.ipk
 Size: 943
 SHA256sum: 7f8c7e8531da368ae1a420152428a329c250736f3c011bd1c8276620e84d7377
 Description:  Kernel module to support SFP cages
-
-Package: kmod-siit
-Version: 5.15.137+1.2-4
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a)
-License: GPL-2.0-or-later
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 5268
-Filename: kmod-siit_5.15.137+1.2-4_arm_cortex-a9_vfpv3-d16.ipk
-Size: 6052
-SHA256sum: 67a91ddaf36d8ebe4406618979e4056fd961666bffeaa800bedcaf2ba3346412
-Description:  Stateless IP ICMP Translation Algorithm
 
 Package: kmod-sis190
 Version: 5.15.137-1
@@ -10097,21 +9322,6 @@ Filename: kmod-tpm_5.15.137-1_arm_cortex-a9_vfpv3-d16.ipk
 Size: 26242
 SHA256sum: fc48b35f8c8ad51fb59a8f1c15b8a939bfed52134d626f6aadc8711f6bb075c7
 Description:  This enables TPM Hardware Support.
-
-Package: kmod-trelay
-Version: 5.15.137-2
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a)
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 3812
-Filename: kmod-trelay_5.15.137-2_arm_cortex-a9_vfpv3-d16.ipk
-Size: 4743
-SHA256sum: 1142aef479d7df4b4f9e1daa919d9f9e574778eb4a2845701b86f6039dbc766f
-Description:  trelay relays ethernet packets between two devices (similar to a bridge), but
- without any MAC address checks. This makes it possible to bridge client mode
- or ad-hoc mode wifi devices to ethernet VLANs, assuming the remote end uses
- the same source MAC address as the device that packets are supposed to exit
- from.
 
 Package: kmod-tulip
 Version: 5.15.137-1
@@ -10812,20 +10022,6 @@ Description:  Kernel support for devices with Cypress M8 USB to Serial chip
  Supported microcontrollers in the CY4601 family are:
  CY7C63741 CY7C63742 CY7C63743 CY7C64013
 
-Package: kmod-usb-serial-dmx_usb_module
-Version: 5.15.137+19.12.1-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-usb-serial
-License: GPL-2.0-only
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 5294
-Filename: kmod-usb-serial-dmx_usb_module_5.15.137+19.12.1-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 6187
-SHA256sum: 81fe0a3cd0447fe78710a9d434e0ce1ec9b09163b97f37dc3630a0fddca715cb
-Description:  Open DMX USB is an open USB to DMX dongle hardware design developed by Enttec.
- The Open in Open DMX USB refers to the fact that everybody is free to use the
- design and produce its own USB DMX Dongle without paying any licenses.
-
 Package: kmod-usb-serial-edgeport
 Version: 5.15.137-1
 Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-usb-serial, edgeport-firmware
@@ -11059,18 +10255,6 @@ Size: 4522
 SHA256sum: 8096df9eef291045ce8175b153c2359be5e1ac8cd355724a90a8874b38324f85
 Description:  Kernel support for USB GSM and CDMA modems
 
-Package: kmod-usb-serial-xr_usb_serial_common
-Version: 5.15.137+2022-03-30-ecc6ebe0-1
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-usb-serial
-License: GPL-2.0-or-later
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 12333
-Filename: kmod-usb-serial-xr_usb_serial_common_5.15.137+2022-03-30-ecc6ebe0-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 13161
-SHA256sum: 553a40507dbd0ab6a1dfb7d48a2915d75ee95538dae74a4c9a194af258989b85
-Description:  Support for Exar USB to RS-485/RS-422
-
 Package: kmod-usb-serial
 Version: 5.15.137-1
 Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-usb-core
@@ -11280,21 +10464,6 @@ Filename: kmod-usbmon_5.15.137-1_arm_cortex-a9_vfpv3-d16.ipk
 Size: 13998
 SHA256sum: 7fb51814d53fa76e477c0e80f1ae421baf56abfb8ad6b240dc8713e5fa6d219c
 Description:  Kernel support for USB traffic monitoring
-
-Package: kmod-v4l2loopback
-Version: 5.15.137+v0.12.7-2
-Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-video-core
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 17323
-Filename: kmod-v4l2loopback_5.15.137+v0.12.7-2_arm_cortex-a9_vfpv3-d16.ipk
-Size: 18220
-SHA256sum: 22b9006e2660abf811fc277850415ffd68698038602c1e1e739895afce0f598b
-Description:  This module allows you to create "virtual video devices".
- Normal (v4l2) applications will read these devices as if
- they were ordinary video devices, but the video will not be
- read from e.g. a capture card but instead it is generated
- by another application. 
 
 Package: kmod-veth
 Version: 5.15.137-1
@@ -11851,19 +11020,6 @@ Size: 26684
 SHA256sum: 27daf9bd3d29bdc3b8416b473b4cc0072e89a42584615673052058e9eb21847e
 Description:  Kernel modules for VMware VMXNET3 ethernet adapters.
 
-Package: kmod-vrf
-Version: 5.15.137-1
-Depends: kernel (=5.15.137-1-5693566370d6be70681d3c7511354060)
-License: GPL-2.0
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 11376
-Filename: kmod-vrf_5.15.137-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 12166
-SHA256sum: 558c2b8e2badf8062da5776f912d4080626cc9d413c44cb6f4636bea6068221f
-Description:  This option enables the support for mapping interfaces into VRF's. The
- support enables VRF devices.
-
 Package: kmod-vxlan
 Version: 5.15.137-1
 Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-iptunnel, kmod-udptunnel4, kmod-udptunnel6
@@ -12074,18 +11230,6 @@ Size: 8938
 SHA256sum: bbd75e0bf7daccce27486220692ed36c07d53120d9627a3246b08c8414b3a37a
 Description:  his driver provides a common framework for WWAN drivers.
 
-Package: kmod-xdp-sockets-diag
-Version: 5.15.137-1
-Depends: kernel (=5.15.137-1-5693566370d6be70681d3c7511354060)
-License: GPL-2.0
-Section: kernel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 2516
-Filename: kmod-xdp-sockets-diag_5.15.137-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 3275
-SHA256sum: 36cbcf39cbe4712c2c6ddeb05578762b85599cc88d82c2d6670c938df89d1d6a
-Description:  Support for PF_XDP sockets monitoring interface used by the ss tool
-
 Package: kmod-xfrm-interface
 Version: 5.15.137-1
 Depends: kernel (=5.15.137-1-adec7b9ab9fcf988b58011de28c60b3a), kmod-ipsec4, kmod-ipsec6
@@ -12274,19 +11418,6 @@ Size: 22503
 SHA256sum: 653d59968dcd24af6aa958daadf18a4e1073299886cbbc60f149775091532d8a
 Description:  IPv4/IPv6 firewall - shared xtables library
 
-Package: mtd
-Version: 26
-Depends: libc, libubox20230523
-License: GPL-2.0+
-Section: utils
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 11933
-Filename: mtd_26_arm_cortex-a9_vfpv3-d16.ipk
-Size: 12701
-SHA256sum: 87b8e2c026f17aa7a17318183bbc858f3bc5326eed006310b8c44b65318e9720
-Description:  This package contains an utility useful to upgrade from other firmware or 
- older OpenWrt releases.
-
 Package: mwlwifi-firmware-88w8864
 Version: 2023-04-29-6a436714-1
 Depends: libc, kmod-mwlwifi
@@ -12348,29 +11479,6 @@ Size: 53164
 SHA256sum: 02ed5510f0ec69354c07f60ac128d6166b016a8bcd7bec8abba8d3b424f33759
 Description:  Utilities for NAND devices.
 
-Package: perf
-Version: 5.15.137-5
-Depends: libc, libelf1, libdw1, libpthread, librt, objdump, libbfd, libopcodes
-Section: devel
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 1220840
-Filename: perf_5.15.137-5_arm_cortex-a9_vfpv3-d16.ipk
-Size: 1215854
-SHA256sum: ebb8a6566df43f254d279a65778ad71ccea8e196604c48d2d819ba76efc01513
-Description:  perf is the Linux performance monitoring tool
-
-Package: qosify
-Version: 2023-03-07-9a47ea4b-1
-Depends: libc, libbpf1, libubox20230523, libubus20230605, libnl-tiny1, kmod-sched-cake, kmod-sched-bpf, kmod-ifb, tc
-License: GPL-2.0
-Section: utils
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 25963
-Filename: qosify_2023-03-07-9a47ea4b-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 26563
-SHA256sum: 172c8e2780064a8c5ef49d5862f7db720a1740814a741fa464b6cac377009e53
-Description:  A simple QoS solution based eBPF + CAKE
-
 Package: snapshot-tool
 Version: 2023-02-28-bfe882d5-1
 Depends: libc, libubox20230523, fstools
@@ -12395,44 +11503,6 @@ Filename: ubi-utils_2.1.5-1_arm_cortex-a9_vfpv3-d16.ipk
 Size: 88915
 SHA256sum: e653879dbccd77500cd8fd8992d5463fe931227b19d943408953eb91dd5d0123
 Description:  Utilities for manipulating memory technology devices.
-
-Package: uboot-envtools
-Version: 2023.04-1
-Depends: libc
-License: GPL-2.0 GPL-2.0+
-Section: utils
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 15336
-Filename: uboot-envtools_2023.04-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 16043
-SHA256sum: 5e4e87e5b3878f950c8bdf0859b4eec52e8722acc539fe1dbcd750fe061da975
-Description:  This package includes tools to read and modify U-Boot bootloader environment.
-
-Package: umbim
-Version: 2022-08-13-146bc77c-24
-Depends: libc, libubox20230523, kmod-usb-net, kmod-usb-net-cdc-mbim, wwan
-License: GPL-2.0
-Section: net
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 14686
-Filename: umbim_2022-08-13-146bc77c-24_arm_cortex-a9_vfpv3-d16.ipk
-Size: 15450
-SHA256sum: 7511beb956c2784c9c74449f1fde3fa577d30085d1cb1bb971a97fbfc4b14c18
-Description:  umbim is a command line tool for controlling mobile broadband modems using
- the MBIM-protocol.
-
-Package: uqmi
-Version: 2022-10-20-c8c9f105-1
-Depends: libc, libubox20230523, libblobmsg-json20230523, kmod-usb-net, kmod-usb-net-qmi-wwan, wwan
-License: GPL-2.0
-Section: net
-Architecture: arm_cortex-a9_vfpv3-d16
-Installed-Size: 48706
-Filename: uqmi_2022-10-20-c8c9f105-1_arm_cortex-a9_vfpv3-d16.ipk
-Size: 49231
-SHA256sum: 001957279e26b068578511eb4c3bb1301fee5fe63954aaaf00b4bfd2407072ee
-Description:  uqmi is a command line tool for controlling mobile broadband modems using
- the QMI-protocol.
 
 Package: xtables-legacy
 Version: 1.8.8-2
